@@ -1,0 +1,12 @@
+name: Publish reviewed Ultra Diagnostics redesign
+on:
+  push:
+    branches: [gh-pages]
+    paths: [.github/workflows/publish-reviewed-20260915.yml]
+permissions:
+  contents: write
+jobs:
+  publish:
+    uses: SharpSites-demo/sparta-gym-spa-ritik-demo/.github/workflows/publish-reviewed-html.yml@41cd0e039ca25ad2234ffc0978649d9e00875f09
+    with:
+      expected_sha256: baac777ce71cb3abbf5f6fa50178432a0f3c4824ef5737ba679b846ca106c01a
